@@ -8,4 +8,7 @@ module.exports = {
             'promises',
         ],
     },
+    rules: {
+        'flowtype/no-flow-fix-me-comments': 1,
+    },
 };
