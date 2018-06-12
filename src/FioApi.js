@@ -21,35 +21,35 @@ export default class FioApi extends Api<ApiResponseType<*>> {
         this.format = format;
     }
 
-    getTransactionOverview(year: number, overviewNumber: number) {
+    getTransactionOverview(year: number, overviewNumber: number): Promise<ApiResponseType<*>> {
         return this.get(this.getTransactionsApiUrl('by-id', `${year}/${overviewNumber}`));
     }
 
-    getTransactions(start: DateTime, end: DateTime) {
+    getTransactions(start: DateTime, end: DateTime): Promise<ApiResponseType<*>> {
         return this.get(this.getTransactionsApiUrl('periods', `${start.toFormat(this.dateFormat)}/${end.toFormat(this.dateFormat)}`));
     }
 
-    getLastTransactions() {
+    getLastTransactions(): Promise<ApiResponseType<*>> {
         return this.get(this.getTransactionsApiUrl('last'));
     }
 
-    setLastTransactionById(id: number) {
+    setLastTransactionById(id: number): Promise<ApiResponseType<*>> {
         return this.get(this.getLastTransactionSetApiUrl('id', id.toString()));
     }
 
-    setLastTransactionBydate(date: DateTime) {
+    setLastTransactionBydate(date: DateTime): Promise<ApiResponseType<*>> {
         return this.get(this.getLastTransactionSetApiUrl('date', date.toFormat(this.dateFormat)));
     }
 
-    getApiUrl(action: string, namespace: string, format: ?string = this.format) {
+    getApiUrl(action: string, namespace: string, format: ?string = this.format): string {
         return `${action}/${this.apiKey}/${namespace}${format ? `.${format}` : '/'}`;
     }
 
-    getTransactionsApiUrl(action: string, namespace: ?string) {
+    getTransactionsApiUrl(action: string, namespace: ?string): string {
         return this.getApiUrl(action, `${namespace ? `/${namespace}/` : ''}transactions`);
     }
 
-    getLastTransactionSetApiUrl(action: string, value: string) {
+    getLastTransactionSetApiUrl(action: string, value: string): string {
         return this.getApiUrl(`set-last-${action}`, value, null);
     }
 }
