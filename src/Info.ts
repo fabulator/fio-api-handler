@@ -1,4 +1,3 @@
-// @flow
 import { DateTime } from 'luxon';
 
 type Source = {
@@ -11,12 +10,12 @@ type Source = {
     closingBalance: number,
     dateStart: string,
     dateEnd: string,
-    yearList: ?number,
-    idList: ?number,
+    yearList: number | undefined,
+    idList: number | undefined,
     idFrom: number,
     idTo: number,
-    idLastDownload: ?number,
-}
+    idLastDownload: number | undefined,
+};
 
 type Data = {
     accountId: number,
@@ -28,18 +27,19 @@ type Data = {
     bic: string,
     openingBalance: number,
     closingBalance: number,
-    yearList: ?number,
-    idList: ?number,
+    yearList: number | undefined,
+    idList: number | undefined,
     idFrom: number,
     idTo: number,
-    idLastDownload: ?number,
-}
+    idLastDownload: number | undefined,
+};
 
 export default class Info {
-    data: Data;
-    source: Source;
+    protected data: Data;
 
-    constructor(source: Source) {
+    protected source: Source;
+
+    public constructor(source: Source) {
         const dateFormat = 'yyyy-MM-ddZZZ';
         this.source = source;
         // $FlowFixMe
@@ -52,67 +52,67 @@ export default class Info {
         };
     }
 
-    getAccountId(): number {
+    public getAccountId(): number {
         return this.data.accountId;
     }
 
-    getBankId(): number {
+    public getBankId(): number {
         return this.data.bankId;
     }
 
-    getCurrency(): string {
+    public getCurrency(): string {
         return this.data.currency;
     }
 
-    getIban(): string {
+    public getIban(): string {
         return this.data.iban;
     }
 
-    getBic(): string {
+    public getBic(): string {
         return this.data.bic;
     }
 
-    getOpeningBalance(): number {
+    public getOpeningBalance(): number {
         return this.data.openingBalance;
     }
 
-    getClosingBalance(): number {
+    public getClosingBalance(): number {
         return this.data.closingBalance;
     }
 
-    getStart(): DateTime {
+    public getStart(): DateTime {
         return this.data.dateStart;
     }
 
-    getEnd(): DateTime {
+    public getEnd(): DateTime {
         return this.data.dateEnd;
     }
 
-    getYearList(): ?number {
+    public getYearList() {
         return this.data.yearList;
     }
 
-    getIdList(): ?number {
+    public getIdList() {
         return this.data.idList;
     }
 
-    getIdFrom(): number {
+    public getIdFrom(): number {
         return this.data.idFrom;
     }
 
-    getIdTo(): number {
+    public getIdTo(): number {
         return this.data.idTo;
     }
 
-    getIdLastDownload(): ?number {
+    public getIdLastDownload() {
         return this.data.idLastDownload;
     }
 
-    getData(): Data {
+    public getData(): Data {
         return this.data;
     }
 
-    getSource(): Source {
+    public getSource(): Source {
         return this.source;
     }
 }

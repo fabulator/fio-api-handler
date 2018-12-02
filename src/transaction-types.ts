@@ -1,4 +1,3 @@
-// @flow
 export const PRIJEM_PREVODEM_UVNITR_BANKY = 'Příjem převodem uvnitř banky';
 export const PLATBA_PREVODEM_UVNITR_BANKY = 'Platba převodem uvnitř banky';
 export const POPLATEK = 'Poplatek';

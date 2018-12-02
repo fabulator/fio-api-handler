@@ -1,4 +1,4 @@
-import { FioApi } from './../src';
+import { FioApi } from '../src';
 
 describe('FioApi testing', () => {
     it('create api object', () => {
