@@ -1,7 +1,7 @@
 import { DateTime } from 'luxon';
 import { PLATBA_KARTOU, TransactionType } from './transaction-types';
 
-type Data = {
+interface Data {
     issueDate: DateTime,
     createdDate: DateTime,
     type: TransactionType,
@@ -22,12 +22,12 @@ type Data = {
     sendToAccountName: string | null,
     sendToBankCode: string | null,
     sendToBank: string | null,
-};
+}
 
 export default class Transaction {
     protected data: Data;
 
-    protected source: Object;
+    protected source: Record<string, any>;
 
     // eslint-disable-next-line complexity,sonarjs/cognitive-complexity
     public constructor(source: {[key: string]: { value: any }}) {

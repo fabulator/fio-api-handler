@@ -3,7 +3,7 @@ import FioApi from './FioApi';
 import Info from './Info';
 import Transaction from './Transaction';
 
-type TransactionsResponse = { info: Info, transactions: Array<Transaction> };
+interface TransactionsResponse { info: Info, transactions: Transaction[] }
 
 export default class EnhacedFioApi extends FioApi {
     // eslint-disable-next-line no-useless-constructor

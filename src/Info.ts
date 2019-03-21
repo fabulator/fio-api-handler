@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon';
 
-type Source = {
+interface Source {
     accountId: string,
     bankId: string,
     currency: string,
@@ -15,9 +15,9 @@ type Source = {
     idFrom: number,
     idTo: number,
     idLastDownload: number | undefined,
-};
+}
 
-type Data = {
+interface Data {
     accountId: number,
     bankId: number,
     dateStart: DateTime,
@@ -32,7 +32,7 @@ type Data = {
     idFrom: number,
     idTo: number,
     idLastDownload: number | undefined,
-};
+}
 
 export default class Info {
     protected data: Data;
