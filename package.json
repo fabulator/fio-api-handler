@@ -36,7 +36,7 @@
         "cross-fetch": "^3.0.4"
     },
     "dependencies": {
-        "@types/luxon": "^1.15.1",
+        "@types/luxon": "^1.15.2",
         "luxon": "^1.16.0",
         "rest-api-handler": "^2.1.0"
     }
