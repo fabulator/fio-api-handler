@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [2.2.0] 2019-10-24
+### Changed
+- [d1abbf1](https://github.com/fabulator/fio-api-handler/commit/d1abbf147b9ea137839bf67ad2090ae01bfb8575) Update dev dependency @socifi/rollup-config to ^2.2.2
+
 ## [2.1.0] 2019-10-22
 ### Changed
 - [668bfbe](https://github.com/fabulator/fio-api-handler/commit/668bfbead8f671e530dbe5567a1d1ea72703d957) Update dependencies.
