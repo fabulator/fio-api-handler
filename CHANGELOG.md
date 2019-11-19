@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [2.8.0] 2019-11-19
+### Changed
+- [b1e922c](https://github.com/fabulator/fio-api-handler/commit/b1e922cf0c73a14983a9a751487abd979b769ecd) Update dependency luxon to v1.21.2
+
 ## [2.7.0] 2019-11-16
 ### Changed
 - [af32e97](https://github.com/fabulator/fio-api-handler/commit/af32e977cf0764cca1736dda7ac0dde5412881a5) Update dependency @types/luxon to v1.21.0
