@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [2.18.0] 2020-03-07
+### Changed
+- [032fa37](https://github.com/fabulator/fio-api-handler/commit/032fa37d4cac3d033cb0c5aa9a8bd689ca6f15b2) Update dependency rest-api-handler to v2.13.0
+- [6fcdd7f](https://github.com/fabulator/fio-api-handler/commit/6fcdd7f603a3f574ffe49ba3bdbc21da7bac005d) Update dev dependency @socifi/eslint-config to v2.10.2 
+
 ## [2.17.0] 2020-02-01
 ### Changed
 - [22ae704](https://github.com/fabulator/fio-api-handler/commit/22ae7046a519dc99ab059e7fe739f149d0c132d0) Update dependency rest-api-handler to v2.12.0
