@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [2.19.0] 2020-03-23
+### Changed
+- [49c7a99](https://github.com/fabulator/fio-api-handler/commit/49c7a99e375471151febb94810fd158d8b15aa9e) Update dependency rest-api-handler to v2.14.0
+
 ## [2.18.0] 2020-03-07
 ### Changed
 - [032fa37](https://github.com/fabulator/fio-api-handler/commit/032fa37d4cac3d033cb0c5aa9a8bd689ca6f15b2) Update dependency rest-api-handler to v2.13.0
