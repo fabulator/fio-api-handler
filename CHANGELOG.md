@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v2.32.0 (2020-07-22)
+### Changed
+- [bea45ae](https://github.com/fabulator/fio-api-handler/commit/bea45ae972d95f8465646abaed9cb5524010b329) Update dependency @types/luxon to v1.24.2
+- [d57636d](https://github.com/fabulator/fio-api-handler/commit/d57636d9f2269e3deda8e1bda5dfe648f706ba2c) Update dev dependency semantic-release-config-fabulator to v2 
+
 ## [2.31.0] 2020-07-17
 ### Changed
 - [cccb881](https://github.com/fabulator/fio-api-handler/commit/cccb8815cd6abf2d9e6474a56ea013e85a686085) Update dependency rest-api-handler to v2.20.0
