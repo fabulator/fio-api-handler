@@ -1,6 +1,6 @@
 {
     "name": "fio-api-handler",
-    "version": "2.33.14",
+    "version": "2.33.15",
     "description": "Unofficial handler for Fio Bank API",
     "main": "dist/index.js",
     "jsnext:main": "dist/index.esm.js",
