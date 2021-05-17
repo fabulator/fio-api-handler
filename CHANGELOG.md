@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v2.33.43 (2021-05-17)
+### Fixed
+- [edf9f02](https://github.com/fabulator/fio-api-handler/commit/edf9f0219b22ceed4508f3408baf732fade773ba) Update lock for security updated
+
 ## v2.33.42 (2021-05-10)
 ### Fixed
 - [16c5252](https://github.com/fabulator/fio-api-handler/commit/16c5252a1e2fcace2f7a31b9fdcd03f1a1dabf95) Update lock for security updated
